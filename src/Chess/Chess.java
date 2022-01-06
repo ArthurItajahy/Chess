@@ -2,14 +2,16 @@ package Chess;
 
 import java.util.ArrayList;
 import java.util.Objects;
-
 public class Chess {
     private final ArrayList<String[]> tabelH;
 
     public Chess(){
         this.tabelH = new ArrayList<String[]>();
         for(int i=0; i<8; i++){
-            String[] tabelV = {" "," "," "," "," "," "," "," "};
+            String[] tabelV = new String[8];
+            for(int j=0; j<8;j++){
+                tabelV[j] = " ";
+            }
             this.tabelH.add(tabelV);
         }
     }
@@ -31,6 +33,7 @@ public class Chess {
         }
         for(int i=0; i<8;i++) {
             for(int j=0;j<8;j++){
+
                 if (i == peace) {
                     switch (j){
                         case 0:
