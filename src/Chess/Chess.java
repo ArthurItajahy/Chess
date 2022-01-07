@@ -6,7 +6,7 @@ public class Chess {
     private final ArrayList<String[]> tabelH;
 
     public Chess(){
-        this.tabelH = new ArrayList<String[]>();
+        this.tabelH = new ArrayList<>();
         for(int i=0; i<8; i++){
             String[] tabelV = new String[8];
             for(int j=0; j<8;j++){
